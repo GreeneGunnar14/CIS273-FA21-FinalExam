@@ -13,10 +13,17 @@ namespace FinalExam
     {
         public AnimalType AnimalType { get; set; }
 
+        public string Name { get; set; }
+
+        public double Weight { get; set; }
+
         public Animal()
         {
         }
 
-
+        public override string ToString()
+        {
+            return $"{Name} ({AnimalType})";
+        }
     }
 }
